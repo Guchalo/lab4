@@ -1,0 +1,77 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:bisque;
+}
+
+div.parallax {
+    margin: 30px;
+   border: 3px solid black;
+ }
+ 
+ .parallax {
+   background-image: url("image/estadio.jpg");
+   min-height: 200px; 
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+ .parallax2 {
+   background-image: url("https://www.iol.pt/multimedia/oratvi/multimedia/imagem/id/5f9b35a70cf28e704d9344ae/");
+   min-height: 200px; 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ nav {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav a {display: inline-block;}
+
+ .menu {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    border: none;
+  }
+  
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .img{
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .menu-content a:hover {background-color: #ddd;}
+  
+  nav:hover .menu-content {display: block;}
+  
+  nav:hover .menu {background-color: red;}
+ 

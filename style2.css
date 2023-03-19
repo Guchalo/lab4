@@ -1,0 +1,136 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    position: sticky;
+    height: 10vh;
+    background-color: red;
+    color: olive;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    font-size: 2em;
+    padding: 1em;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: blue;
+}
+
+nav a:hover {
+    color: grey;
+    font-weight: bold
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: goldenrod;
+    font-size: 2rem;
+}
+
+.foto {
+    position: relative;
+    width: 100%;
+}
+
+.frase {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: black;
+}
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: bisque;
+    padding: 50px;
+}
+
+.capitais>div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border: 25px solid;
+    border-color: #f00 #0f0 #00f #fc0;
+    z-index: 1;
+}
+
+.flex2>div:nth-child(3) {
+    border-radius: 0px;
+    z-index: 3;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    clip: rect(40px, 75px, 75px, 20px);
+    z-index: 2;
+}
+
+.hide {
+    display: none;
+}
+
+.visual:hover+.hide {
+    display: block;
+}
